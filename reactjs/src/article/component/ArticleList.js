@@ -1,13 +1,9 @@
 import React from 'react';
-import '../style/Article.css';
-import Eagle1 from '../../common/component/Eagle1';
-import EagleFooter from '../../common/component/EagleFooter';
+import 'article/style/Article.css';
 
 const ArticleList = () => {
     return (
         <>
-            <Eagle1 />
-
             <div className="head_color">
                 <h2>HTML Table</h2>
             </div>
@@ -48,8 +44,6 @@ const ArticleList = () => {
                     <td>Italy</td>
                 </tr>
             </table>
-
-            <EagleFooter />
         </>
     );
 };

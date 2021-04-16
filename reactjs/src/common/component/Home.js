@@ -1,15 +1,19 @@
 import React from 'react';
-import '../style/Home.css';
-import '../style/Common.css';
-import '../component/Eagle1';
-import '../component/Eagle2';
-import '../component/Eagle3';
-import '../component/Eagle4';
-import '../component/Eagle5';
-import '../component/EagleHead';
-import '../component/EagleFooter';
+import 'common/style/Home.css';
+import 'common/style/Common.css';
+import EagleNavi from 'common/component/EagleNavi';
+import Eagle from 'common/component/Eagle';
+import EagleHead from 'common/component/EagleHead';
+import EagleFooter from 'common/component/EagleFooter';
 
 const Home = () => {
-    return <></>;
+    return (
+        <>
+            <EagleNavi />
+            <Eagle />
+            <EagleHead />
+            <EagleFooter />
+        </>
+    );
 };
 export default Home;

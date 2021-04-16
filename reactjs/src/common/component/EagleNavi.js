@@ -1,8 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import App from 'App';
+import 'common/style/Home.css';
+import EagleHead from 'common/component/EagleHead';
 
-const Eagle1 = () => {
+const EagleNavi = () => {
     return (
         <>
+            <EagleHead />
             <nav className="navbar navbar-default">
                 <div className="container">
                     <div className="navbar-header">
@@ -27,10 +32,16 @@ const Eagle1 = () => {
                                 <a href="#">WHERE</a>
                             </li>
                             <li>
-                                <a href="#">Board</a>
+                                <Link to={'/board/component/article-list'}>Board</Link>
                             </li>
                             <li>
-                                <a href="#">SignUp</a>
+                                <Link to={'/user/component/sign-up'}>SignUp</Link>
+                            </li>
+                            <li>
+                                <Link to={'/board/component/news-board'}>NewsBoard</Link>
+                            </li>
+                            <li>
+                                <Link to={'/board/component/seoul-cctv'}>SeoulCCTV</Link>
                             </li>
                         </ul>
                     </div>
@@ -39,4 +50,4 @@ const Eagle1 = () => {
         </>
     );
 };
-export default Eagle1;
+export default EagleNavi;

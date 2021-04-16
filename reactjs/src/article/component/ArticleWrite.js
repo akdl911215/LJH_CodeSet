@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/ArticleWrite.css';
+import 'article/style/ArticleWrite.css';
 const ArticleWrite = () => {
     return (
         <>
