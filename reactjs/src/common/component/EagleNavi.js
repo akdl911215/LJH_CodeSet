@@ -43,6 +43,9 @@ const EagleNavi = () => {
                             <li>
                                 <Link to={'/board/component/seoul-cctv'}>SeoulCCTV</Link>
                             </li>
+                            <li>
+                                <Link to={'/board/component/counter'}>Counter</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

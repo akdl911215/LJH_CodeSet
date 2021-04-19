@@ -3,7 +3,7 @@ import 'App.css';
 import { ArticleList, ArticleWrite, ArticleDetail } from 'article/index';
 import { Login, SignUp, UserDetail } from 'user/index';
 import { EagleNavi, EagleFooter, EagleHead, Home } from 'common/index';
-import { NewsBoard, SeoulCCTV } from 'board/index';
+import { NewsBoard, SeoulCCTV, Counter } from 'board/index';
 import { Route } from 'react-router-dom';
 
 const App = () => {
@@ -16,6 +16,7 @@ const App = () => {
             <Route exact path="/board/component/article-detail" component={ArticleDetail}></Route>
             <Route exact path="/board/component/news-board" component={NewsBoard}></Route>
             <Route exact path="/board/component/seoul-cctv" component={SeoulCCTV}></Route>
+            <Route exact path="/board/component/counter" component={Counter}></Route>
 
             <Route exact path="/user/component/login" component={Login}></Route>
             <Route exact path="/user/component/sign-up" component={SignUp}></Route>
